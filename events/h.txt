@@ -1,0 +1,72 @@
+const client = require("../index")
+const Discord = require("discord.js")
+const schema = require("../Models/antiChannel")
+const whitelistConfig = require("../Models/whitelistConfig")
+
+
+client.on("channelCreate", async(channel) => {
+    
+    
+    const audit = await channel.guild.fetchAuditLogs({
+        limit: 1,
+        type:"CHANNEL_CREATE"
+    });
+
+    let entries = await audit.entries.first()
+
+    let author = entries.executor;
+    const member = await channel.guild.members.fetch(author.id)
+   
+    let configuration = await schema.findOne({
+        Guild: channel.guildId,
+
+    }, async(err, data) => {
+        if(data){
+            let whitelisted = await whitelistConfig.findOne({
+                Guild: channel.guildId,
+                User: author.id,
+            }, async(err, data) => {
+                if(data) return;
+                 else {
+                    if(!data){
+                        channel.delete()
+                        member.send({
+                            embeds: [
+                                new Discord.MessageEmbed()
+                                .setColor("BLUE")
+                                .setDescription(`You Were Kicked In ${channel.guild.name}`)
+                                .addField(`Reason`, `${client.user.username} Security | AntiChannel System`)
+                            ]
+                        })
+                        setTimeout(() => {
+                            member.kick(`${client.user.username} Security | AntiChannel`)
+                        }, 2000)
+                    }
+                }
+            })
+            
+            if(whitelisted) console.log(`Whitelisted - ${author.tag}`)
+        }
+    })
+    
+     
+    channel.delete()
+    member.kick(`${client.user.username} Antichannel System | Security`)
+})
+
+client.on("guildBanAdd", async(member) => {
+    const audit = await member.guild.fetchAuditLogs({
+        limit: 1,
+        type: "MEMBER_BAN_ADD"
+    })
+
+    let entries = await audit.entries.first()
+
+    let exec = entries.executor;
+
+    let author = member.guild.members.fetch(exec.id)
+
+    let config = await schema.findOne({
+        Guild: member.guild.id,
+    })
+})

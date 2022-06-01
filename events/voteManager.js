@@ -1,0 +1,3 @@
+const manager = require("./interactionCreate");
+
+

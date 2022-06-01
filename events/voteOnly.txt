@@ -1,0 +1,29 @@
+if(cmd.voteOnly){
+        const manager = new Topgg.Api("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyNzA5MjExMzMxNTg2ODcxMyIsImJvdCI6dHJ1ZSwiaWF0IjoxNjQ5NTE0MDgzfQ.cZ6MW0WNOF4-K66qQC4NePn4HVp1KwRhlwbNC0z7p0U")
+        module.exports = manager;
+        let vote = await manager.hasVoted(interaction.user.id)
+        let bot = new MessageActionRow().addComponents(
+          new MessageButton()
+          .setStyle("LINK")
+          .setURL("https://top.gg/bot/927092113315868713/vote")
+          .setLabel(`Vote Me`)
+        )
+
+        if(!vote){
+          return interaction.followUp({
+            embeds: [
+              new MessageEmbed()
+              .setColor("BLUE")
+              .setDescription(`<a:sh_nope:967120304130359407> **Hey ${interaction.user} Voting is Required to use this Command __[Vote Me Here](https://top.gg/bot/927092113315868713/vote)__ <:sh_vote:967119524346343495> **`)
+              .setTitle(`Vote Required!`)
+              .setFooter({
+                text: `${client.user.username}`,
+                iconURL:`${client.user.displayAvatarURL({dynamic: true})}`
+              })
+            ],
+            components: [
+              bot
+            ]
+          })
+        }
+      }
