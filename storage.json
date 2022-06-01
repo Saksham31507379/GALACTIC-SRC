@@ -1,0 +1,255 @@
+{
+	"939543577346863114": {
+		"788745942777462794": {
+			"money": 4014,
+			"bank": 10003996,
+			"dailyCooldown": 1650303148086
+		},
+		"889458474919002142": {
+			"money": 1714,
+			"bank": 1000,
+			"dailyCooldown": 1649579800682
+		},
+		"shop": [
+			{
+				"id": 1,
+				"itemName": "Test Modrole",
+				"price": "10",
+				"message": "Buy <@&958298433838542858> in exchange of 10",
+				"description": "Role Info - Hex Color - #000000, ID -  958298433838542858",
+				"maxAmount": 5,
+				"role": "<@&958298433838542858>",
+				"date": "4/10/2022, 3:51:56 AM"
+			}
+		],
+		"927922111757049947": {
+			"money": 234322
+		}
+	},
+	"904050969300590592": {
+		"889458474919002142": {
+			"bank": 1305,
+			"money": 0,
+			"dailyCooldown": 1649579826703
+		},
+		"788745942777462794": {
+			"money": 910302343,
+			"dailyCooldown": 1651059037611,
+			"inventory": [
+				{
+					"id": 1,
+					"itemName": "TRAINEE MOD",
+					"price": "1000",
+					"message": "Buy <@&958633875389677589> in exchange of 1000",
+					"description": "Role Info - Hex Color - #e67e22, ID -  958633875389677589",
+					"role": "<@&958633875389677589>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:53:30 AM"
+				},
+				{
+					"id": 2,
+					"itemName": "TEST ROLE",
+					"price": "10",
+					"message": "Buy <@&958633886471061524> in exchange of 10",
+					"description": "Role Info - Hex Color - #000000, ID -  958633886471061524",
+					"role": "<@&958633886471061524>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:55:42 AM"
+				},
+				{
+					"id": 3,
+					"itemName": "TEST ROLE",
+					"price": "10",
+					"message": "Buy <@&958633886471061524> in exchange of 10",
+					"description": "Role Info - Hex Color - #000000, ID -  958633886471061524",
+					"role": "<@&958633886471061524>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:56:36 AM"
+				}
+			],
+			"history": [
+				{
+					"id": 1,
+					"memberID": "788745942777462794",
+					"guildID": "904050969300590592",
+					"itemName": "TRAINEE MOD",
+					"price": "1000",
+					"role": "<@&958633875389677589>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:53:30 AM"
+				},
+				{
+					"id": 2,
+					"memberID": "788745942777462794",
+					"guildID": "904050969300590592",
+					"itemName": "TEST ROLE",
+					"price": "10",
+					"role": "<@&958633886471061524>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:55:42 AM"
+				},
+				{
+					"id": 3,
+					"memberID": "788745942777462794",
+					"guildID": "904050969300590592",
+					"itemName": "TEST ROLE",
+					"price": "10",
+					"role": "<@&958633886471061524>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:56:36 AM"
+				}
+			],
+			"bank": 89700000
+		},
+		"shop": [
+			{
+				"id": 1,
+				"itemName": "TRAINEE MOD",
+				"price": "1000",
+				"message": "Buy <@&958633875389677589> in exchange of 1000",
+				"description": "Role Info - Hex Color - #e67e22, ID -  958633875389677589",
+				"maxAmount": 5,
+				"role": "<@&958633875389677589>",
+				"date": "4/10/2022, 3:53:16 AM"
+			},
+			{
+				"id": 2,
+				"itemName": "TEST ROLE",
+				"price": "10",
+				"message": "Buy <@&958633886471061524> in exchange of 10",
+				"description": "Role Info - Hex Color - #000000, ID -  958633886471061524",
+				"maxAmount": 5,
+				"role": "<@&958633886471061524>",
+				"date": "4/10/2022, 3:55:10 AM"
+			}
+		],
+		"935432770879119430": {
+			"money": 10
+		}
+	},
+	"939040140863606794": {
+		"788745942777462794": {
+			"money": 1711,
+			"weeklyCooldown": 1649579985248,
+			"bank": 100000,
+			"dailyCooldown": 1649580182703,
+			"inventory": [
+				{
+					"id": 1,
+					"itemName": "3",
+					"price": "5",
+					"message": "Buy <@&950650241596682301> in exchange of 5",
+					"description": "Role Info - Hex Color - #000000, ID -  950650241596682301",
+					"role": "<@&950650241596682301>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:52:35 AM"
+				}
+			],
+			"history": [
+				{
+					"id": 1,
+					"memberID": "788745942777462794",
+					"guildID": "939040140863606794",
+					"itemName": "3",
+					"price": "5",
+					"role": "<@&950650241596682301>",
+					"maxAmount": 5,
+					"date": "4/10/2022, 3:52:35 AM"
+				}
+			]
+		},
+		"shop": [
+			{
+				"id": 1,
+				"itemName": "3",
+				"price": "5",
+				"message": "Buy <@&950650241596682301> in exchange of 5",
+				"description": "Role Info - Hex Color - #000000, ID -  950650241596682301",
+				"maxAmount": 5,
+				"role": "<@&950650241596682301>",
+				"date": "4/10/2022, 3:52:27 AM"
+			}
+		]
+	},
+	"917061538676891759": {
+		"shop": [
+			{
+				"id": 1,
+				"itemName": "MODERATORAM",
+				"price": "10",
+				"message": "Buy <@&962192108675018773> in exchange of 10",
+				"description": "Role Info - Hex Color - #0ff000, ID -  962192108675018773",
+				"maxAmount": 5,
+				"role": "<@&962192108675018773>",
+				"date": "4/10/2022, 3:35:00 AM"
+			},
+			{
+				"id": 2,
+				"itemName": "xD ROle",
+				"price": "1000",
+				"message": "Buy <@&962663546213244939> in exchange of 1000",
+				"description": "Role Info - Hex Color - #000000, ID -  962663546213244939",
+				"maxAmount": 5,
+				"role": "<@&962663546213244939>",
+				"date": "4/10/2022, 3:41:28 AM"
+			}
+		],
+		"788745942777462794": {
+			"money": 2901,
+			"dailyCooldown": 1649908698925
+		}
+	},
+	"961231081045115010": {
+		"788745942777462794": {
+			"money": 1295,
+			"dailyCooldown": 1649914316596,
+			"bank": 10
+		}
+	},
+	"942660440985591849": {
+		"788745942777462794": {
+			"money": 2504,
+			"dailyCooldown": 1649960494582
+		}
+	},
+	"958587622714912798": {
+		"788745942777462794": {
+			"money": 4037,
+			"dailyCooldown": 1651555130906
+		}
+	},
+	"835057253916606484": {
+		"757141003927814195": {
+			"money": 0,
+			"dailyCooldown": 1650801203540,
+			"bank": 2585
+		}
+	},
+	"962547436562296842": {
+		"895922352439820309": {
+			"money": 1000000100000001
+		}
+	},
+	"964030625126445076": {
+		"957138085223727144": {
+			"money": 4885,
+			"dailyCooldown": 1652006571145
+		},
+		"893464012828860426": {
+			"money": 99999900001394,
+			"dailyCooldown": 1651645387961,
+			"bank": 100000000
+		},
+		"788745942777462794": {
+			"money": 854,
+			"dailyCooldown": 1651645399848,
+			"bank": 1000
+		}
+	},
+	"958430043678335026": {
+		"788745942777462794": {
+			"money": 1463,
+			"dailyCooldown": 1652553530888
+		}
+	}
+}

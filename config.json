@@ -1,0 +1,10 @@
+{
+  "token": "OTM1NDMyNzcwODc5MTE5NDMw.Ye-jqA.l_VZcuTqpBeioE_24uI2HB-nmSM",
+  "botId": "935432770879119430",
+  "DeveloperID": "788745942777462794",
+  "everyoneMention": true,
+  "hostedBy": true,
+  "prefix": "!",
+  "mongooseConnectionString": "mongodb+srv://brandan:brandan123@premiumdb.yezka.mongodb.net/Data",
+  "PORT": "90"
+}
