@@ -1,0 +1,67 @@
+const { Command } = require('reconlx');
+const ee = require(`../../settings/config`).embed
+const Discord = require('discord.js')
+const { MessageEmbed, MessageActionRow, MessageButton, MessageSelectMenu } = require("discord.js");
+const client = require("../../index")
+
+module.exports = new Command({
+    name: `ticket-panel`,
+    description: `Send's A Ticket Pannel `,
+    userPermissions: ["MANAGE_GUILD"],
+    
+    run: async ({ interaction }) => {
+     
+        const embed = new MessageEmbed()
+        .setColor("BLUE")
+        .setDescription(`Open Ticket`)
+
+        const menu = new MessageActionRow()
+        .addComponents(
+            new MessageSelectMenu()
+            .setPlaceholder(`Ok`)
+            .setCustomId("Ticket")
+            .addOptions([
+                {
+                    label: `Open Ticket`,
+                    description: `Open A Ticket`,
+                    value: `Ti`
+                }
+            ])
+        )
+        let filter = (i) => i.user.id === interaction.user.id;
+        let collector = await interaction.channel.createMessageComponentCollector({
+            filter: filter
+        })
+
+        collector.on("collect", async(i) => {
+            let value = i.values[0]
+            if(value  === "Ti"){
+                i.guild.channels.create(`Ticket- ${i.user.discriminator}`, {
+                    type: "GUILD_TEXT",
+                    permissionOverwrites: [
+                        {
+                            id: interaction.guild.roles.everyone.id,
+                            deny: ["VIEW_CHANNEL"]
+                        },
+                        {
+                            id: i.user.id,
+                            allow: ["VIEW_CHANNEL", "SEND_MESSAGES", "ADD_REACTIONS", "ATTACH_FILES", "USE_APPLICATION_COMMANDS"],
+                            deny: ["MANAGE_MESSAGES", "MANAGE_THREADS"]
+                        }
+                    ]
+                }).then(async(ch) => {
+                    ch.send({
+                        embeds: [
+                            new MessageEmbed()
+                            .setColor("BLUE")
+                            .setDescription(`Get Custom Bot`)
+                        ],
+                        content: `${i.user}`
+                    })
+                })
+            }
+        })
+
+        interaction.followUp({embeds: [embed], components: [menu]})
+    }
+})
